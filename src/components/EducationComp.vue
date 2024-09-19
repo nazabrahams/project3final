@@ -17,6 +17,14 @@
       
       </div>
       </div>
+      <h2 class="heading7">Soft Skills</h2>
+    <div class="images justify-content-center">
+      <div v-for="softSkills in $store.state.softSkills" :key="softSkills.id">
+        <img :src="softSkills.image" alt="softSkills Image" class="softSkills-image animate__animated animate__tada animate__infinite">
+        <p class="soft-skill-name">{{ softSkills.name }}</p>
+      
+      </div>
+      </div>
   </template>
   
   <script>
@@ -27,6 +35,9 @@
       },
       getSkills() {
         return this.$store.state.skills
+      },
+      getSoftSkills() {
+        return this.$store.state.softSkills
       }
     },
     mounted() {
@@ -36,11 +47,22 @@
   </script>
   
   <style scoped>
+
+
+
+  .soft-skill-name {
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: black;
+  }
+
   .container {
     display: flex;
     flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
+    overflow-x: hidden;
   }
   
   .educations-card {
@@ -68,6 +90,7 @@
       align-content: center;
       align-items: center;
       text-align: center;
+      margin: 0 auto;
       
     }
    .skills-image {
@@ -82,5 +105,22 @@
       margin-left: 28px;
      
     }
+   .softSkills-image {
+     margin-right: 140px; 
+      width: 160px;
+      height: 150px;
+      align-content: center;
+      align-items: center;
+      display: flex;
+      text-align: center;
+      padding-bottom: 40px;
+      margin: 0 auto;
+    }
+    .heading7{
+    color: #1C110A;
+    margin-bottom: 8%;
+    font-weight: bold;
+  }
+ 
     
   </style>

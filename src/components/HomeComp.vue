@@ -22,7 +22,7 @@
     border-radius: 50%;
     position: absolute;
     top: 27%;
-    left: 34%;
+    left: 37%;
     transform: translate(-50%, -50%);
     
   }

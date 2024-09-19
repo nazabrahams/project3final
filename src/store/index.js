@@ -7,6 +7,7 @@ export default createStore({
     education: null,
     skills: null,
     testimonials: null,
+    softSkills: null
   },
   getters: {
   },
@@ -25,18 +26,22 @@ export default createStore({
     },
     setTestimonials(state,payload){
       state.testimonials = payload
+    },
+    setSoftSkills(state,payload){
+      state.softSkills = payload
     }
   },
   actions: {
     async getData({commit}){
       let fetchedData = await fetch('https://nazabrahams.github.io/project3-api/data.json')
       let data = await fetchedData.json()
-      let {about,projects, education,skills, testimonials} = data
+      let {about,projects, education,skills, testimonials, softSkills} = data
       commit('setAbout',about)
       commit('setProjects', projects)
       commit('setEducation', education)
       commit('setSkills', skills)
       commit('setTestimonials', testimonials)
+      commit('setSoftSkills', softSkills)
     }
   },
   modules: {
