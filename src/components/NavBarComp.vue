@@ -17,9 +17,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#education">Resume</a>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link" href="#testimonials">Testimonials</a>
-                  </li>
+                  </li> -->
                   <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                   </li>
@@ -43,6 +43,12 @@ export default {
 <style>
 .nav-link{
     color: #e4d6a7;
-}
     
+}
+.nav-item{
+  font-size: 21px;
+}
+.nav-link  :hover{
+  color: #e4d6a7;
+}
 </style>

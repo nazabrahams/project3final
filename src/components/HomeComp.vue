@@ -16,13 +16,13 @@
   
   <style scoped>
   .circle {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: #1C110A;
     border-radius: 50%;
     position: absolute;
     top: 27%;
-    left: 32%;
+    left: 34%;
     transform: translate(-50%, -50%);
     
   }

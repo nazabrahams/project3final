@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="container" id="testimonials">
       <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -66,4 +66,17 @@
     background-color: #f0f0f0;
   }
   
+  </style> -->
+  <template lang="">
+    <div>
+      
+    </div>
+  </template>
+  <script>
+  export default {
+    
+  }
+  </script>
+  <style lang="">
+    
   </style>
